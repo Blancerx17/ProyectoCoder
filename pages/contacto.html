@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../images/logofico.ico" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <!---- ↓↓↓ NAV ↓↓↓ ---->
+        <nav class="menu">
+            <ol>
+                <a title="ficobar" href="index.html"><img src="../images/logofico3.png" alt="ficobar"  class="logoPagina"/><a></a>
+              <li class="menu-item"><a href="../index.html">Inicio</a></li>
+              <li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
+              <li class="menu-item">
+                <a href="#0">Menu</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="menu.html">Hamburguesas</a></li>
+                    <li class="menu-item"><a href="menuBebidas.html">Bebidas</a></li>
+                    <li class="menu-item"><a href="menuAlcohol.html">Alcohol</a></li>
+                  </ol>
+              </li>
+              <li class="menu-item"><a href="encuesta.html">Encuesta</a></li>
+              <li class="menu-item"><a href="contacto.html">Contactános</a></li>
+            </ol>
+          </nav>
+
+    </header>
+
+    <main>
+        
+        <!-- ↓↓↓ Botones redes sociales ↓↓↓ -->
+        <div class="socialBar">
+            <a href="https://facebook.com" class="icon icon-facebook" target="_blank"></a>
+            <a href="https://twitter.com" class="icon icon-twitter" target="_blank"></a>
+            <a href="https://instagram.com" class="icon icon-instagram" target="_blank"></a>
+        </div>
+            
+
+            <section>
+                <form action="#" class="formularioContacto">
+                    <div class="divContacto">Contacto <hr class="hrHamburguesas"></div>
+                    <fieldset class="fieldsetContacto">
+                        <legend class="labelContacto">Formulario de contacto</legend>
+                            
+                            <!-- ↓↓↓ Nombre ↓↓↓ -->
+                            <div>
+                                <label for="nombre" class="labelContacto">Nombre:</label>
+                                <input type="text" name="nombre"
+                                placeholder="Nombre" required>
+                            </div>
+                            <!-- ↓↓↓ Apellido ↓↓↓ -->
+                            <div>    
+                                <label for="apellido" class="labelContacto">Apellido:</label>
+                                <input type="text" name="apellido"
+                                placeholder="Apellido" required>
+                            </div>
+                            <!-- ↓↓↓ Edad ↓↓↓ -->
+                            <div>
+                                <label for="edad" class="labelContacto">Edad:</label>
+                                <input type="number" name="edad"
+                                placeholder="Edad" required>
+                            </div>
+                            <!-- ↓↓↓ Email ↓↓↓ -->
+                            <div>
+                                <label for="email" class="labelContacto">Correo electronico:</label>
+                                <input type="email" name="email" placeholder="Escribe tu E-mail" required>
+                            </div>
+                            <!-- ↓↓↓ Relacion actual ↓↓↓ -->
+                            <div>
+                                <label for="Estado_civil" class="labelContacto">Estado civil:</label>
+                                <select name="Estado_civil"> 
+                                    <option>Soltero/a</option>
+                                    <option>Casado/a</option> 
+                                </select>
+                            </div>
+                            <!-- ↓↓↓ Boton promociones ↓↓↓ -->
+                            <div>
+                                <label for="noticias" class="labelContacto">¿Desea recibir noticias acerca de promociones?</label>
+                                <input type="checkbox" name="noticias">
+                            </div>
+                            <!-- ↓↓↓ Opinion ↓↓↓ -->
+                            <div class="textArea">    
+                                <label for="comentarios" class="labelContacto">Déjanos tu comentario aquí abajo</label> <br> <br>
+                                <textarea name="comentarios" rows="10" cols="40" placeholder="Escríbenos tus comentarios..." ></textarea>
+                            </div>
+                            <!-- ↓↓↓ Botones enviar y borrar ↓↓↓ -->
+                            <div>
+                                <input type="submit" value="Enviar información">
+                                <input type="reset" value="Borrar información">
+                            </div>
+                                
+                            
+
+                            <br><br>
+                            
+                    </fieldset>
+                </section>
+
+                <section class="informacionAdicional">
+                    <div class="telefonoLugar">
+                    <strong>📞Teléfono:</strong> 11 5871-6226
+                    </div>
+                    <div class="correoLugar">
+                    <strong>📩Correo:</strong> FicoBar@gmail.com
+                    </div>
+                    <div class="ubicacionLugar">
+                    <strong>🚩Ubicación:</strong> Av. Maipu 2931
+                    </div>
+                </section>
+
+        
+    </main>
+    <footer class="rightsReserved">
+        Todos los derechos reservados © 2021
+    </footer>
+</body>
+</html>
