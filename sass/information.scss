@@ -1,0 +1,28 @@
+/* ----------------- INFORMATION ----------------- */
+.informacionAdicional {
+    background-color: #FF785A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 60px;
+  }
+  
+  .telefonoLugar {
+    color: #3a3333;
+    margin: 25px;
+  }
+  
+  .correoLugar {
+    color: #3a3333;
+  }
+  
+  .ubicacionLugar {
+    color: #3a3333;
+    margin: 25px;
+  }

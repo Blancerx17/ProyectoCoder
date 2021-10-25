@@ -1,0 +1,106 @@
+/* ---------- MENU -------- */
+.hamburguesaMenu {
+    background-color: #3a3333;
+    color: #fff;
+  }
+  
+  .hrOpciones {
+    border-color: #FFD25A !important;
+  }
+  
+  .nuestrasOpciones {
+    background-color: #3a3333;
+    padding: 20px;
+  }
+  
+  .opcionesSizeMenu {
+    font-size: 1.6em;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .baconCheese {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .baconCheese figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .baconCheese figure img {
+    width: 300px;
+    height: 200px;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+  
+  .baconCheese figure .descriptionBurguer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 22, 22, 0.7);
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+  }
+  
+  .baconCheese figure:hover > .descriptionBurguer {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .baconCheese figure:hover > .descriptionBurguer h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+  
+  .baconCheese figure:hover > img {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  
+  .baconCheese figure .descriptionBurguer h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 120px;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+  
+  .baconCheese figure .descriptionBurguer p {
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .baconCheese figure .descriptionBurguer .veggieBurguer {
+    color: #07d300;
+  }
+  
+  /* GRID NUESTRAS OPCIONES */
+  .baconCheese {
+    font-family: 'Glory', sans-serif;
+    background-color: #3a3333;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr);
+        grid-template-columns: repeat(3, 1fr);
+    /*                        */
+  }

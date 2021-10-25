@@ -1,0 +1,309 @@
+/* ------------------------ NAV ------------------------ */
+.menu {
+  background: #FFD25A;
+  height: 4rem;
+  position: relative;
+}
+
+.menu ol {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 600;
+}
+
+.menu > ol {
+  max-width: 1000px;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu > ol > .menu-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.75rem 0;
+}
+
+.menu > ol > .menu-item:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  bottom: 5px;
+  left: calc(50% - 2px);
+  background: #3a3333;
+  will-change: transform;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.menu > ol > .menu-item:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.menu-item {
+  position: relative;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.menu-item a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  display: block;
+  color: #000 !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sub-menu .menu-item {
+  padding: 0.75rem 0;
+  background: #FFD25A;
+  opacity: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: enter 0.2s ease forwards;
+          animation: enter 0.2s ease forwards;
+  cursor: pointer;
+}
+
+.sub-menu .menu-item:nth-child(1) {
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.sub-menu .menu-item:nth-child(2) {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.sub-menu .menu-item:nth-child(3) {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.sub-menu .menu-item:hover {
+  background: #3a3333;
+}
+
+.sub-menu .menu-item a {
+  padding: 0 0.75rem;
+}
+
+@media screen and (max-width: 600px) {
+  .sub-menu .menu-item {
+    background: #3a3333;
+  }
+  figure {
+    width: 200px !important;
+    height: 200px !important;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-column: 6 !important;
+    grid-column: 6 !important;
+    right: 67px;
+  }
+  figure > img {
+    padding-right: 90px !important;
+  }
+  .descriptionBurguer > h3 {
+    font-size: 17px;
+  }
+  .descriptionBurguer > p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+  .menu:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 1rem;
+    width: 30px;
+    height: 4px;
+    background: #FFF;
+    -webkit-box-shadow: 0 10px #FFF, 0 -10px #FFF;
+            box-shadow: 0 10px #FFF, 0 -10px #FFF;
+  }
+  .menu > ol {
+    display: none;
+    background: #FFD25A;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    -webkit-animation: fade 0.2s ease-out;
+            animation: fade 0.2s ease-out;
+  }
+  .menu > ol > .menu-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    opacity: 0;
+    -webkit-animation: enter 0.3s ease-out forwards;
+            animation: enter 0.3s ease-out forwards;
+  }
+  .menu > ol > .menu-item:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .menu > ol > .menu-item:nth-child(2) {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+  .menu > ol > .menu-item:nth-child(3) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  .menu > ol > .menu-item:nth-child(4) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .menu > ol > .menu-item:nth-child(5) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .menu > ol > .menu-item + .menu-item {
+    margin-top: 0.75rem;
+  }
+  .menu > ol > .menu-item:after {
+    left: auto;
+    right: 1rem;
+    bottom: calc(50% - 2px);
+  }
+  .menu > ol > .menu-item:hover {
+    z-index: 1;
+  }
+  .menu:hover > ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu:hover:after {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+.menu-item:hover > .sub-menu {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .sub-menu {
+    width: 100vw;
+    left: -2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .logoPagina {
+    left: 100px;
+    padding-bottom: 20px;
+  }
+}
+
+html, body {
+  font-size: 17px;
+  font-family: "Glory", monospace;
+  margin: 0;
+  background: #3a3333;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@-webkit-keyframes enter {
+  from {
+    opacity: 0;
+    -webkit-transform: scaleY(0.98) translateY(10px);
+            transform: scaleY(0.98) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    -webkit-transform: scaleY(0.98) translateY(10px);
+            transform: scaleY(0.98) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a .logoPagina {
+  width: 200px;
+  position: relative;
+  right: 200px;
+  margin-top: 6px;
+}

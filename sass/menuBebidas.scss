@@ -1,0 +1,39 @@
+/* MENU BEBIDAS */
+.baconCheese .figureBebidas {
+    position: relative;
+    left: 420px;
+    margin: 30px;
+    width: 485px;
+    height: 380px;
+  }
+  
+  .baconCheese figure .imgBebidas {
+    height: 380px;
+    width: 515px;
+    position: relative;
+    right: 1.05rem;
+  }
+  
+  .baconCheese .figureBebidas:hover > .descriptionBurguer h3 {
+    margin-top: 140px;
+    margin-bottom: 35px;
+  }
+  
+  .baconCheese .figureBebidas .descriptionBurguer h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 40px;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+  
+  .baconCheese .figureBebidas .descriptionBurguer p {
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .baconCheese .figureBebidas:hover > img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  

@@ -1,0 +1,53 @@
+/* ----------------------- SOCIAL BAR ICONS ------------------------- */
+.socialBar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    z-index: 100;
+  }
+  
+  .icon {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+  .icon-facebook {
+    background: #2E406E;
+    border-radius: 1rem 0 0 0;
+  }
+  
+  .icon-twitter {
+    background: #339DC5;
+  }
+  
+  .icon-instagram {
+    background: #E1306C;
+    border-radius: 0 0 0 1rem;
+  }
+  
+  .icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+    text-overflow: ellipsis !important;
+    color: white !important;
+  }
+  
