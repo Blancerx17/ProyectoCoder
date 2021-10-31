@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +27,6 @@
                     <li class="menu-item"><a href="menuAlcohol.html">Alcohol</a></li>
                   </ol>
               </li>
-              <li class="menu-item"><a href="encuesta.html">Encuesta</a></li>
               <li class="menu-item"><a href="contacto.html">Contactános</a></li>
             </ol>
           </nav>
@@ -43,66 +42,32 @@
             <a href="https://instagram.com" class="icon icon-instagram" target="_blank"></a>
         </div>
             
-
+        <div class="divContacto">Contacto <hr class="hrHamburguesas"></div>
             <section>
-                <form action="#" class="formularioContacto">
-                    <div class="divContacto">Contacto <hr class="hrHamburguesas"></div>
-                    <fieldset class="fieldsetContacto">
-                        <legend class="labelContacto">Formulario de contacto</legend>
-                            
-                            <!-- ↓↓↓ Nombre ↓↓↓ -->
-                            <div>
-                                <label for="nombre" class="labelContacto">Nombre:</label>
-                                <input type="text" name="nombre"
-                                placeholder="Nombre" required>
-                            </div>
-                            <!-- ↓↓↓ Apellido ↓↓↓ -->
-                            <div>    
-                                <label for="apellido" class="labelContacto">Apellido:</label>
-                                <input type="text" name="apellido"
-                                placeholder="Apellido" required>
-                            </div>
-                            <!-- ↓↓↓ Edad ↓↓↓ -->
-                            <div>
-                                <label for="edad" class="labelContacto">Edad:</label>
-                                <input type="number" name="edad"
-                                placeholder="Edad" required>
-                            </div>
-                            <!-- ↓↓↓ Email ↓↓↓ -->
-                            <div>
-                                <label for="email" class="labelContacto">Correo electronico:</label>
-                                <input type="email" name="email" placeholder="Escribe tu E-mail" required>
-                            </div>
-                            <!-- ↓↓↓ Relacion actual ↓↓↓ -->
-                            <div>
-                                <label for="Estado_civil" class="labelContacto">Estado civil:</label>
-                                <select name="Estado_civil"> 
-                                    <option>Soltero/a</option>
-                                    <option>Casado/a</option> 
-                                </select>
-                            </div>
-                            <!-- ↓↓↓ Boton promociones ↓↓↓ -->
-                            <div>
-                                <label for="noticias" class="labelContacto">¿Desea recibir noticias acerca de promociones?</label>
-                                <input type="checkbox" name="noticias">
-                            </div>
-                            <!-- ↓↓↓ Opinion ↓↓↓ -->
-                            <div class="textArea">    
-                                <label for="comentarios" class="labelContacto">Déjanos tu comentario aquí abajo</label> <br> <br>
-                                <textarea name="comentarios" rows="10" cols="40" placeholder="Escríbenos tus comentarios..." ></textarea>
-                            </div>
-                            <!-- ↓↓↓ Botones enviar y borrar ↓↓↓ -->
-                            <div>
-                                <input type="submit" value="Enviar información">
-                                <input type="reset" value="Borrar información">
-                            </div>
-                                
-                            
+                <form action="">
+                    <div class="imgContacto"><img src="../images/contacto.svg" alt="" class="contactoImagen"></div>
+                    
+                    <p>Nombre:</p>
+                    <input type="text" class="field" required> <br/>
+                
+                    <p>Correo electrónico:</p>
+                    <input type="text" class="field" required> <br/>
+                
+                    <p>Asunto:</p>
+                    <input type="text" class="field" required> <br/>
+                
+                    <p>Mensaje:</p>
+                    <textarea class="field" required></textarea> <br/>
+                
+                    <div class="buttonContacto">
+                        <input type="submit" class="inputContacto" value="Enviar información">
+                        <input type="reset" class="inputContacto" value="Borrar información">
+                    </div>
+                    
+                    
+                </form>
 
-                            <br><br>
-                            
-                    </fieldset>
-                </section>
+                
 
                 <section class="informacionAdicional">
                     <div class="telefonoLugar">
@@ -114,6 +79,8 @@
                     <div class="ubicacionLugar">
                     <strong>🚩Ubicación:</strong> Av. Maipu 2931
                     </div>
+
+                    
                 </section>
 
         

@@ -5,6 +5,7 @@
   
   .labelContacto {
     color: #fff;
+    
   }
   
   .divContacto {
@@ -18,3 +19,74 @@
     padding: 20px;
     margin-left: 10px;
   }
+  
+form{
+			background-color: #3a3333;
+			border-radius: 3px;
+			color: #999;
+			font-size: 0.85em;
+			padding: 20px;
+			margin: 0 auto;
+			display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: left;
+		}
+
+		input, textarea{
+			border: 0;
+      border-radius: 5px;
+			outline: none;
+      resize: none;
+			width: 50%;
+		}
+    textarea{
+      height: 120px;
+    }
+
+    .contactoImagen{
+      position: absolute;
+      width: 49%;
+      left: 51%;
+      bottom: 10vh;
+    }
+
+		.field{
+			border: solid 1px #ccc;
+			padding: 10px;
+		}
+
+		.field:focus{
+			border-color: #000000;
+		}
+
+		.center-content{
+			text-align: center;
+		}
+
+  .inputContacto{
+    color: #3a3333;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    background-color: #FFD25A;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  .inputContacto:hover{
+    color: #000000;
+    background-color: #be9c44;
+    transition: all ease-in-out 600ms;
+  }
+
+.buttonContacto{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 600px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
