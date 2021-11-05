@@ -39,43 +39,46 @@ textarea {
 
 .contactoImagen {
   position: absolute;
-  width: 49%;
-  left: 51%;
-  bottom: 10vh; }
+  width: 48%; }
 
-.field {
+.imgContacto {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  position: relative;
+  top: 60px; }
+
+.fieldContacto {
   border: solid 1px #ccc;
   padding: 10px; }
 
-.field:focus {
+.fieldContacto:focus {
   border-color: #000000; }
 
-.center-content {
-  text-align: center; }
+.buttonContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .inputContacto {
   color: #3a3333;
   padding: 15px 30px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   border: none;
   background-color: #FFD25A;
   cursor: pointer;
   box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.2);
   width: 300px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .inputContacto:hover {
   color: #000000;
   background-color: #be9c44;
   transition: all ease-in-out 600ms; }
-
-.buttonContacto {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) 600px;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
 
 /* ----------- ENCUESTA & CONTACTO TEXTAREA ------------- */
 .textArea textarea {
