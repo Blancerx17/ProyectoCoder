@@ -63,3 +63,25 @@
     height: 450px;
   }
   
+
+  @media screen and (max-width: 600px) {
+    
+    .nosotrosImagen figure{
+      left: 100px;
+      width: 100%;
+    }
+    
+    .nosotrosImagen figure img{
+      height: 100%;
+      width: 200%;
+    }
+    
+    .nosotrosImagen figure:hover > .descriptionBurguer h3{
+      margin: auto;
+      font-size: auto;
+    }
+
+    .nosotrosImagen figure .descriptionBurguer p{
+      font-size: auto;
+    }
+  }

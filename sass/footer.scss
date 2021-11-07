@@ -18,3 +18,9 @@
   footer {
     background-color: #3a3333;
   }
+
+  @media screen and (max-width: 600px){
+    .rightsReserved{
+      font-size: 0.9rem;
+    }
+  }

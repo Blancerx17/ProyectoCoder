@@ -111,12 +111,12 @@
     background: #3a3333;
   }
   figure {
-    width: 200px !important;
-    height: 200px !important;
-    display: -ms-grid !important;
-    display: grid !important;
-    -ms-grid-column: 6 !important;
-    grid-column: 6 !important;
+    width: 200px ;
+    height: 200px ;
+    display: -ms-grid ;
+    display: grid ;
+    -ms-grid-column: 6 ;
+    grid-column: 6 ;
     right: 67px;
   }
   figure > img {
@@ -202,11 +202,15 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
   }
   .menu:hover:after {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  
 }
 
 .sub-menu {
@@ -224,7 +228,7 @@
 
 @media screen and (max-width: 600px) {
   .sub-menu {
-    width: 100vw;
+    width: 96.6vw;
     left: -2rem;
     top: 50%;
     -webkit-transform: translateY(-50%);

@@ -104,3 +104,10 @@
         grid-template-columns: repeat(3, 1fr);
     /*                        */
   }
+
+  @media screen and (max-width: 600px){
+    .baconCheese figure img{
+      height: 11.8rem;
+      width: 23rem;
+    }
+  }
