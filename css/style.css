@@ -359,7 +359,7 @@ body {
 .menu-item a {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis !important;
+  text-overflow: ellipsis;
   display: block;
   color: #000 !important;
   font-weight: 600;
@@ -430,8 +430,7 @@ body {
     background: #FFF;
     -webkit-box-shadow: 0 10px #FFF, 0 -10px #FFF;
     box-shadow: 0 10px #FFF, 0 -10px #FFF;
-    z-index: 1;
-    cursor: pointer; }
+    z-index: 1; }
   .menu > ol {
     display: none;
     background: #FFD25A;
@@ -507,7 +506,8 @@ body {
     left: -2rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    width: 120%; }
   .logoPagina {
     left: 4rem;
     padding-bottom: 20px; } }
@@ -532,8 +532,8 @@ a {
 @-webkit-keyframes enter {
   from {
     opacity: 0;
-    -webkit-transform: scaleY(0.98) translateY(10px);
-    transform: scaleY(0.98) translateY(10px); }
+    -webkit-transform: scaleY(0.5) translateY(10px);
+    transform: scaleY(0.5) translateY(10px); }
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -542,8 +542,9 @@ a {
 @keyframes enter {
   from {
     opacity: 0;
-    -webkit-transform: scaleY(0.98) translateY(10px);
-    transform: scaleY(0.98) translateY(10px); }
+    -webkit-transform: scaleY(0.38) translateY(3px);
+    transform: scaleY(0.38) translateY(3px);
+    animation-delay: 500ms; }
   to {
     opacity: 1;
     -webkit-transform: none;
