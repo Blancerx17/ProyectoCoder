@@ -106,7 +106,7 @@
   padding: 0 0.75rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .sub-menu .menu-item {
     background: #3a3333;
   }
@@ -130,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .menu {
     display: block;
   }
@@ -144,6 +144,9 @@
     background: #FFF;
     -webkit-box-shadow: 0 10px #FFF, 0 -10px #FFF;
             box-shadow: 0 10px #FFF, 0 -10px #FFF;
+    z-index: 1;
+    cursor: pointer;
+            
   }
   .menu > ol {
     display: none;
@@ -155,7 +158,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100vh;
+    height: 122vh;
     -webkit-animation: fade 0.2s ease-out;
             animation: fade 0.2s ease-out;
   }
@@ -210,7 +213,11 @@
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  
+  .carousel-indicators, .carousel-control-prev-icon, 
+  .carousel-control-next{
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .sub-menu {
@@ -226,7 +233,7 @@
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .sub-menu {
     width: 96.6vw;
     left: -2rem;
@@ -235,7 +242,7 @@
             transform: translateY(-50%);
   }
   .logoPagina {
-    left: 100px;
+    left: 4rem;
     padding-bottom: 20px;
   }
 }
@@ -311,3 +318,21 @@ a .logoPagina {
   right: 200px;
   margin-top: 6px;
 }
+
+@media screen and (max-width: 1920px){
+  a .logoPagina{
+    position: relative;
+    right: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  a .logoPagina{
+    position: relative;
+    right: 10rem;
+  }
+}
+
+
+
+

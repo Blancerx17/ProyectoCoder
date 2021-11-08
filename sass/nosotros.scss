@@ -67,8 +67,9 @@
   @media screen and (max-width: 600px) {
     
     .nosotrosImagen figure{
-      left: 100px;
-      width: 100%;
+      right: 1.1rem;
+      width: 20rem;
+      height: 15rem;
     }
     
     .nosotrosImagen figure img{
@@ -83,5 +84,10 @@
 
     .nosotrosImagen figure .descriptionBurguer p{
       font-size: auto;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+      margin-top: 4rem;
+      margin-bottom: 0.3rem;
     }
   }

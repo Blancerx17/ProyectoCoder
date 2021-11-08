@@ -243,7 +243,8 @@ body {
   box-shadow: 0px 10px 15px 6px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   width: 300px;
-  height: 200px; }
+  height: 200px;
+  right: 30px; }
 
 .baconCheese figure img {
   width: 300px;
@@ -398,7 +399,7 @@ body {
 .sub-menu .menu-item a {
   padding: 0 0.75rem; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .sub-menu .menu-item {
     background: #3a3333; }
   figure {
@@ -416,7 +417,7 @@ body {
   .descriptionBurguer > p {
     font-size: 14px; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .menu {
     display: block; }
   .menu:after {
@@ -428,7 +429,9 @@ body {
     height: 4px;
     background: #FFF;
     -webkit-box-shadow: 0 10px #FFF, 0 -10px #FFF;
-    box-shadow: 0 10px #FFF, 0 -10px #FFF; }
+    box-shadow: 0 10px #FFF, 0 -10px #FFF;
+    z-index: 1;
+    cursor: pointer; }
   .menu > ol {
     display: none;
     background: #FFD25A;
@@ -439,7 +442,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: 100vh;
+    height: 122vh;
     -webkit-animation: fade 0.2s ease-out;
     animation: fade 0.2s ease-out; }
   .menu > ol > .menu-item {
@@ -481,7 +484,11 @@ body {
     width: 100%; }
   .menu:hover:after {
     -webkit-box-shadow: none;
-    box-shadow: none; } }
+    box-shadow: none; }
+  .carousel-indicators, .carousel-control-prev-icon,
+  .carousel-control-next {
+    display: none;
+    visibility: hidden; } }
 
 .sub-menu {
   position: absolute;
@@ -494,7 +501,7 @@ body {
 .menu-item:hover > .sub-menu {
   display: block; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .sub-menu {
     width: 96.6vw;
     left: -2rem;
@@ -502,7 +509,7 @@ body {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
   .logoPagina {
-    left: 100px;
+    left: 4rem;
     padding-bottom: 20px; } }
 
 html, body {
@@ -559,6 +566,16 @@ a .logoPagina {
   position: relative;
   right: 200px;
   margin-top: 6px; }
+
+@media screen and (max-width: 1920px) {
+  a .logoPagina {
+    position: relative;
+    right: 10rem; } }
+
+@media screen and (max-width: 768px) {
+  a .logoPagina {
+    position: relative;
+    right: 10rem; } }
 
 /* ----------------------- NOSOTROS -------------------- */
 .nosotrosImagen figure {
@@ -618,8 +635,9 @@ a .logoPagina {
 
 @media screen and (max-width: 600px) {
   .nosotrosImagen figure {
-    left: 100px;
-    width: 100%; }
+    right: 1.1rem;
+    width: 20rem;
+    height: 15rem; }
   .nosotrosImagen figure img {
     height: 100%;
     width: 200%; }
@@ -627,7 +645,10 @@ a .logoPagina {
     margin: auto;
     font-size: auto; }
   .nosotrosImagen figure .descriptionBurguer p {
-    font-size: auto; } }
+    font-size: auto; }
+  .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+    margin-top: 4rem;
+    margin-bottom: 0.3rem; } }
 
 /* ----------------------- SOCIAL BAR ICONS ------------------------- */
 .socialBar {
