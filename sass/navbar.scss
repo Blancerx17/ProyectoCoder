@@ -156,7 +156,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 122vh;
+    height: 101vh;
     -webkit-animation: fade 0.2s ease-out;
             animation: fade 0.2s ease-out;
   }
@@ -222,7 +222,6 @@
   position: absolute;
   width: 100%;
   top: 100%;
-  left: 0;
   display: none;
   z-index: 1;
 }
@@ -239,6 +238,7 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 120%;
+    position: relative;
   }
   .logoPagina {
     left: 4rem;
@@ -270,8 +270,8 @@ a {
 @-webkit-keyframes enter {
   from {
     opacity: 0;
-    -webkit-transform: scaleY(0.50) translateY(10px);
-            transform: scaleY(0.50) translateY(10px);
+    -webkit-transform: scaleY(0.98) translateY(10px);
+            transform: scaleY(0.98) translateY(10px);
   }
   to {
     opacity: 1;
@@ -284,9 +284,9 @@ a {
 @keyframes enter {
   from {
     opacity: 0;
-    -webkit-transform: scaleY(0.38) translateY(3px);
-            transform: scaleY(0.38) translateY(3px);
-            animation-delay: 500ms;
+    -webkit-transform: scaleY(0.68) translateY(3px);
+            transform: scaleY(0.68) translateY(3px);
+
   }
   to {
     opacity: 1;
