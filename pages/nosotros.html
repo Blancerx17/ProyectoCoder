@@ -13,22 +13,33 @@
 <body>
     <header>
 
-        <nav class="menu">
-            <ol>
-                <a title="ficobar" href="index.html"><img src="../images/logofico3.png" alt="ficobar"  class="logoPagina"/><a></a>
-              <li class="menu-item"><a href="../index.html">Inicio</a></li>
-              <li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
-              <li class="menu-item">
-                <a href="#0">Menu</a>
-                <ol class="sub-menu">
-                    <li class="menu-item"><a href="menu.html">Hamburguesas</a></li>
-                    <li class="menu-item"><a href="menuEnsaladas.html">Ensaladas</a></li>
-                    <li class="menu-item"><a href="menuAlcohol.html">Alcohol</a></li>
-                  </ol>
-              </li>
-              <li class="menu-item"><a href="contacto.html">Contactános</a></li>
-            </ol>
-          </nav>
+        <a title="ficobar" href="index.html"><img src="../images/logofico3.png" alt="ficobar"  class="logoPagina"/><a></a>
+
+        <nav role="navigation" class="nav">
+            
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link"><span class="font">Inicio</span></a>
+                </li> 
+              <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link"><span class="font">Nosotros</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link"><span class="font">Menu</span></a>
+                    <nav class="submenu">
+                        <ul class="submenu-items">
+                            <li class="submenu-item"><a href="menu.html" class="submenu-link">Hamburguesas</a></li>
+                            <li class="submenu-item"><a href="menuEnsaladas.html" class="submenu-link">Ensaladas</a></li>
+                            <li class="submenu-item"><a href="menuAlcohol.html" class="submenu-link">Alcohol</a></li>
+                        </ul>
+                </li> 
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link"><span class="font">Contacto</span></a>
+                </li>
+                        </ul>
+                </li>  
+            </ul>
+        </nav>
 
     </header>
 
