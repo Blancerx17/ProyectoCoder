@@ -1,6 +1,6 @@
 /* ------------------------ FOOTER ------------------------ */
 .rightsReserved {
-    height: 34px;
+    height: 4.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12,7 +12,7 @@
             justify-content: center;
     font-family: 'Glory', sans-serif !important;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.8rem;
   }
   
   footer {
@@ -21,6 +21,6 @@
 
   @media screen and (max-width: 600px){
     .rightsReserved{
-      font-size: 0.9rem;
+      font-size: 1.4rem;
     }
   }

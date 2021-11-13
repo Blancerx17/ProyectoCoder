@@ -102,7 +102,7 @@ textarea {
 
 /* ------------------------ FOOTER ------------------------ */
 .rightsReserved {
-  height: 34px;
+  height: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,14 +114,14 @@ textarea {
   justify-content: center;
   font-family: 'Glory', sans-serif !important;
   color: #fff;
-  font-size: 1.1em; }
+  font-size: 1.8rem; }
 
 footer {
   background-color: #3a3333; }
 
 @media screen and (max-width: 600px) {
   .rightsReserved {
-    font-size: 0.9rem; } }
+    font-size: 1.4rem; } }
 
 /* ---------- GENERAL ---------- */
 header {
@@ -179,6 +179,20 @@ body {
 .carousel-inner {
   height: 47rem; }
 
+@media only screen and (max-height: 900px) {
+  .carousel-inner {
+    height: 59.15rem; }
+  .carouselImage {
+    width: 100%;
+    height: 59.37rem; } }
+
+@media only screen and (min-height: 950px) {
+  .carousel-inner {
+    height: 71.7rem; }
+  .carouselImage {
+    width: 100%;
+    height: 71.7rem; } }
+
 /* ----------------- INFORMATION ----------------- */
 .informacionAdicional {
   background-color: #FFD25A;
@@ -191,25 +205,40 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 60px; }
+  height: 7.5rem; }
 
 .telefonoLugar {
   color: #3a3333;
   margin: 25px;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.7rem; }
 
 .correoLugar {
   color: #3a3333;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.7rem; }
 
 .ubicacionLugar {
   color: #3a3333;
   margin: 25px;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.7rem; }
 
 @media screen and (max-width: 600px) {
-  .informacionAdicional {
-    font-size: 0.9rem; } }
+  .telefonoLugar {
+    color: #3a3333;
+    margin: 25px;
+    font-weight: 700;
+    font-size: 1.3rem; }
+  .correoLugar {
+    color: #3a3333;
+    font-weight: 700;
+    font-size: 1.3rem; }
+  .ubicacionLugar {
+    color: #3a3333;
+    margin: 25px;
+    font-weight: 700;
+    font-size: 1.3rem; } }
 
 /* ---------- MENU -------- */
 .hamburguesaMenu {
@@ -336,6 +365,9 @@ a {
 
 .hamburger {
   display: none; }
+
+.logoPagina {
+  width: 22rem; }
 
 /* Barras opciones celular/ipad */
 .bar {

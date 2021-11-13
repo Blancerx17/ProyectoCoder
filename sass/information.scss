@@ -10,28 +10,47 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 60px;
+    height: 7.5rem;
   }
   
   .telefonoLugar {
     color: #3a3333;
     margin: 25px;
     font-weight: 700;
+    font-size: 1.7rem;
   }
   
   .correoLugar {
     color: #3a3333;
     font-weight: 700;
+    font-size: 1.7rem;
   }
   
   .ubicacionLugar {
     color: #3a3333;
     margin: 25px;
     font-weight: 700;
+    font-size: 1.7rem;
   }
 
   @media screen and (max-width: 600px){
-    .informacionAdicional{
-      font-size: 0.9rem;
+    .telefonoLugar {
+      color: #3a3333;
+      margin: 25px;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    
+    .correoLugar {
+      color: #3a3333;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    
+    .ubicacionLugar {
+      color: #3a3333;
+      margin: 25px;
+      font-weight: 700;
+      font-size: 1.3rem;
     }
   }
