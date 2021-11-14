@@ -106,12 +106,88 @@ form{
     }
   }
   
-  @media (width: 1366px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    
+    input, textarea{
+			border: 0;
+      border-radius: 5px;
+			outline: none;
+      resize: none;
+			width: 100%;
+      background-image: url(../images/contacto.svg);
+      background-size: auto;
+      margin-top: 40px;
+    }
+
+    form {
+      font-size: 2rem;
+    }
+
+    .fieldContacto {
+      height: 60px;
+    }
+
+    .buttonContacto {
+      margin-bottom: 10px;
+    }
+
+    .contactoImagen{
+      display: none;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .imgContacto {
+      margin-left: 630px;
+      position: relative;
+      top: 140px;
+    }
+
+    .contactoImagen {
+      height: 300px;
+      width: 560px;
+    }
+  }
+
+  @media (min-width: 1281px) and (max-width: 1366px) {
     .imgContacto{
       display: flex;
       justify-content: right;
       align-items: right;
       position: relative;
-      top: 60px;
+      top: 75px;
+    }
+  }
+
+  @media (min-width: 1367px) and (max-width: 1440px) {
+    
+    .imgContacto {
+      margin-left: 770px;
+      position: relative;
+      top: 140px;
+    }
+
+    .contactoImagen {
+      height: 300px;
+      width: 560px;
+    }
+  }
+
+  @media (min-width: 1441px) and (max-width: 1920px) {
+    
+    .imgContacto {
+      margin-left: 1000px;
+      position: relative;
+      top: 12px;
+    }
+
+    .contactoImagen {
+      height: 600px;
+      width: 860px;
+    }
+
+    form {
+      font-size: 20px;
     }
   }

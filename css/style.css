@@ -89,13 +89,61 @@ textarea {
   .contactoImagen {
     display: none; } }
 
-@media (width: 1366px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  input, textarea {
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    width: 100%;
+    background-image: url(../images/contacto.svg);
+    background-size: auto;
+    margin-top: 40px; }
+  form {
+    font-size: 2rem; }
+  .fieldContacto {
+    height: 60px; }
+  .buttonContacto {
+    margin-bottom: 10px; }
+  .contactoImagen {
+    display: none; } }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .imgContacto {
+    margin-left: 630px;
+    position: relative;
+    top: 140px; }
+  .contactoImagen {
+    height: 300px;
+    width: 560px; } }
+
+@media (min-width: 1281px) and (max-width: 1366px) {
   .imgContacto {
     display: flex;
     justify-content: right;
     align-items: right;
     position: relative;
-    top: 60px; } }
+    top: 75px; } }
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+  .imgContacto {
+    margin-left: 770px;
+    position: relative;
+    top: 140px; }
+  .contactoImagen {
+    height: 300px;
+    width: 560px; } }
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .imgContacto {
+    margin-left: 1000px;
+    position: relative;
+    top: 12px; }
+  .contactoImagen {
+    height: 600px;
+    width: 860px; }
+  form {
+    font-size: 20px; } }
 
 /* ----------- ENCUESTA & CONTACTO TEXTAREA ------------- */
 .textArea textarea {
@@ -127,6 +175,11 @@ footer {
 @media screen and (max-width: 600px) {
   .rightsReserved {
     font-size: 1.6rem; } }
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .rightsReserved {
+    height: 5.88rem;
+    font-size: 2rem; } }
 
 /* ---------- GENERAL ---------- */
 header {
@@ -248,6 +301,16 @@ body {
     margin: 25px;
     font-weight: 700;
     font-size: 1.3rem; } }
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .informacionAdicional {
+    height: 8.2rem; }
+  .telefonoLugar {
+    font-size: 2rem; }
+  .correoLugar {
+    font-size: 2rem; }
+    .correoLugar .ubicacionLugar {
+      font-size: 2rem; } }
 
 /* ---------- MENU -------- */
 .hamburguesaMenu {

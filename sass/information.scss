@@ -54,3 +54,21 @@
       font-size: 1.3rem;
     }
   }
+
+  @media (min-width: 1441px) and (max-width: 1920px) {
+    .informacionAdicional {
+      height: 8.2rem;
+    }
+
+    .telefonoLugar {
+      font-size: 2rem;
+    }
+
+    .correoLugar {
+      font-size: 2rem;
+
+    .ubicacionLugar {
+      font-size: 2rem;
+    }
+    }
+  }
