@@ -19,7 +19,7 @@ form {
   background-color: #3a3333;
   border-radius: 3px;
   color: #999;
-  font-size: 0.85em;
+  font-size: 1.85rem;
   padding: 20px;
   margin: 0 auto;
   display: flex;
@@ -40,13 +40,6 @@ textarea {
 .contactoImagen {
   position: absolute;
   width: 48%; }
-
-.imgContacto {
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  position: relative;
-  top: 60px; }
 
 .fieldContacto {
   border: solid 1px #ccc;
@@ -80,7 +73,11 @@ textarea {
   background-color: #be9c44;
   transition: all ease-in-out 600ms; }
 
-@media screen and (max-width: 600px) {
+.divContacto {
+  font-size: 3.5rem;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
   input, textarea {
     border: 0;
     border-radius: 5px;
@@ -91,6 +88,14 @@ textarea {
     background-size: auto; }
   .contactoImagen {
     display: none; } }
+
+@media (width: 1366px) {
+  .imgContacto {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+    top: 60px; } }
 
 /* ----------- ENCUESTA & CONTACTO TEXTAREA ------------- */
 .textArea textarea {
@@ -121,7 +126,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   .rightsReserved {
-    font-size: 1.4rem; } }
+    font-size: 1.6rem; } }
 
 /* ---------- GENERAL ---------- */
 header {
@@ -178,6 +183,10 @@ body {
 
 .carousel-inner {
   height: 47rem; }
+
+.nuestrasHamburguesas {
+  font-size: 3.5rem;
+  text-align: center; }
 
 @media only screen and (max-height: 900px) {
   .carousel-inner {
@@ -253,9 +262,9 @@ body {
   padding: 20px; }
 
 .opcionesSizeMenu {
-  font-size: 1.6em;
+  font-size: 3.5rem;
   color: #fff;
-  text-align: left; }
+  text-align: center; }
 
 .baconCheese {
   display: -webkit-box;
@@ -277,7 +286,10 @@ body {
   cursor: pointer;
   width: 300px;
   height: 200px;
-  right: 30px; }
+  right: 30px;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 6rem; }
 
 .baconCheese figure img {
   width: 300px;
@@ -295,7 +307,8 @@ body {
   transition: all 500ms ease-out;
   opacity: 0;
   visibility: hidden;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.8rem; }
 
 .baconCheese figure:hover > .descriptionBurguer {
   opacity: 1;
@@ -333,10 +346,81 @@ body {
   grid-template-columns: repeat(3, 1fr);
   /*                        */ }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 420px) {
+  .baconCheese figure {
+    margin-left: 65px; }
   .baconCheese figure img {
-    height: 11.8rem;
-    width: 23rem; } }
+    height: 100%;
+    width: 100%; }
+  .baconCheese {
+    font-family: 'Glory', sans-serif;
+    background-color: #3a3333;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media (min-width: 421px) and (max-width: 540px) {
+  .baconCheese {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr); }
+  .baconCheese figure {
+    margin-left: 125px; } }
+
+@media (min-width: 541px) and (max-width: 768px) {
+  .baconCheese {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr); }
+  .baconCheese figure {
+    margin-left: 235px; } }
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .baconCheese {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr); }
+  .baconCheese figure {
+    margin-left: 370px; } }
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+  .baconCheese figure {
+    width: 320px;
+    height: 215px; }
+  .baconCheese figure img {
+    width: 320px;
+    height: 215px;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out; } }
+
+@media (min-width: 1366px) and (max-width: 1439px) {
+  .baconCheese figure {
+    position: relative;
+    right: 6px; } }
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .baconCheese figure {
+    width: 330px;
+    height: 220px; }
+  .baconCheese figure img {
+    width: 330px;
+    height: 220px;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out; } }
+
+@media (min-width: 1920px) {
+  .baconCheese figure {
+    width: 420px;
+    height: 279.9px; }
+  .baconCheese figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out; } }
 
 * {
   margin: 0;
@@ -345,7 +429,7 @@ body {
 
 html {
   font-size: 65%;
-  font-family: 'Glory', sans-serif; }
+  font-family: 'Glory', sans-serif !important; }
 
 li {
   list-style: none; }
@@ -471,35 +555,113 @@ a {
 
 .nosotrosImagen figure .descriptionBurguer h3 {
   color: #fff;
-  font-weight: 700;
   margin-bottom: 120px;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out; }
 
 .nosotrosImagen figure .descriptionBurguer p {
-  color: #fff;
-  font-weight: 300; }
+  color: #fff; }
 
 .iframeMapa {
   width: 100%;
   height: 450px; }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 360px) and (max-width: 767px) {
+  .nosotrosImagen figure .descriptionBurguer {
+    font-size: 1.6rem; }
   .nosotrosImagen figure {
-    right: 1.1rem;
-    width: 20rem;
-    height: 15rem; }
+    width: 360px;
+    height: 300px;
+    margin-bottom: 60px;
+    margin-left: 2.7rem; }
   .nosotrosImagen figure img {
     height: 100%;
-    width: 200%; }
+    width: 100%; }
+  .nosotrosImagen figure:hover > .descriptionBurguer p {
+    margin-top: 20px;
+    margin-bottom: 15px; }
   .nosotrosImagen figure:hover > .descriptionBurguer h3 {
-    margin: auto;
-    font-size: auto; }
-  .nosotrosImagen figure .descriptionBurguer p {
-    font-size: auto; }
+    margin-top: 50px;
+    margin-bottom: 10px; } }
+
+@media (min-width: 768px) {
+  .nosotrosImagen figure .descriptionBurguer {
+    font-size: 2rem; }
+  .nosotrosImagen figure {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    margin-left: 35px; }
+  .nosotrosImagen figure img {
+    height: 100%;
+    width: 100%; }
+  .nosotrosImagen figure:hover > .descriptionBurguer p {
+    margin-top: 2rem; }
   .nosotrosImagen figure:hover > .descriptionBurguer h3 {
-    margin-top: 4rem;
-    margin-bottom: 0.3rem; } }
+    margin-top: 20rem;
+    margin-bottom: 15px; } }
+
+@media (width: 1280px) {
+  .nosotrosImagen figure .descriptionBurguer {
+    font-size: 2rem; }
+  .nosotrosImagen figure {
+    width: 1030px;
+    height: 550px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    margin-left: 11rem; }
+  .nosotrosImagen figure img {
+    height: 100%;
+    width: 100%; }
+  .nosotrosImagen figure:hover > .descriptionBurguer p {
+    margin-top: 2rem; }
+  .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+    margin-top: 20rem;
+    margin-bottom: 25px; } }
+
+@media (min-width: 1281px) and (max-width: 1366px) {
+  .nosotrosImagen figure {
+    width: 1130px;
+    height: 600px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    margin-left: 9rem; }
+  .nosotrosImagen figure img {
+    height: 100%;
+    width: 100%; }
+  .nosotrosImagen figure:hover > .descriptionBurguer p {
+    margin-top: 4rem; }
+  .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+    margin-top: 25rem;
+    margin-bottom: 35px; } }
+
+@media (min-width: 1439px) {
+  .nosotrosImagen figure {
+    margin-left: 120px;
+    width: 1170px;
+    height: 630px;
+    margin-top: 15px;
+    margin-bottom: 35px; }
+  .nosotrosImagen figure img {
+    height: 100%;
+    width: 100%; } }
+
+@media (min-width: 1900px) {
+  .nosotrosImagen figure .descriptionBurguer {
+    font-size: 2.2rem; }
+  .nosotrosImagen figure {
+    width: 1400px;
+    height: 700px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    margin-left: 240px; }
+  .nosotrosImagen figure:hover > .descriptionBurguer p {
+    margin-top: 4rem; }
+  .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+    margin-top: 25rem;
+    margin-bottom: 35px; } }
 
 /* ----------------------- SOCIAL BAR ICONS ------------------------- */
 .socialBar {

@@ -13,61 +13,58 @@
 <body>
     <header>
 
-        <a title="ficobar" href="../index.html"><img src="../images/logofico3.png" alt="ficobar"  class="logoPagina"/><a></a>
-
-        <nav role="navigation" class="nav">
-            
-            <ul class="nav-items">
+        <nav class="navbar">
+            <a title="ficobar" href="../index.html"><img src="../images/logofico3.png" alt="ficobar"  class="logoPagina"/><a></a>
+            <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../index.html" class="nav-link"><span class="font">Inicio</span></a>
-                </li> 
-              <li class="nav-item">
-                    <a href="nosotros.html" class="nav-link"><span class="font">Nosotros</span></a>
+                    <a href="../index.html" class="nav-link">Inicio</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link"><span class="font">Menu</span></a>
-                    <nav class="submenu">
-                        <ul class="submenu-items">
-                            <li class="submenu-item"><a href="menu.html" class="submenu-link">Hamburguesas</a></li>
-                            <li class="submenu-item"><a href="menuEnsaladas.html" class="submenu-link">Ensaladas</a></li>
-                            <li class="submenu-item"><a href="menuAlcohol.html" class="submenu-link">Alcohol</a></li>
-                        </ul>
-                </li> 
                 <li class="nav-item">
-                    <a href="contacto.html" class="nav-link"><span class="font">Contacto</span></a>
+                    <a href="menu.html" class="nav-link">Hamburguesas</a>
                 </li>
-                        </ul>
-                </li>  
+                <li class="nav-item">
+                    <a href="menuEnsaladas.html" class="nav-link">Ensaladas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menuAlcohol.html" class="nav-link">Alcohol</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
 
     </header>
 
     <main>
         
-        <!-- ↓↓↓ Botones redes sociales ↓↓↓ -->
-        <div class="socialBar">
-            <a href="https://facebook.com" class="icon icon-facebook" target="_blank"></a>
-            <a href="https://twitter.com" class="icon icon-twitter" target="_blank"></a>
-            <a href="https://instagram.com" class="icon icon-instagram" target="_blank"></a>
-        </div>
-            
         <div class="divContacto">Contacto <hr class="hrHamburguesas"></div>
             <section>
                 <form action="">
                     <div class="imgContacto"><img src="../images/contacto.svg" alt="" class="contactoImagen"></div>
                     
                     <p>Nombre:</p>
-                    <input type="text" class="fieldContacto" required> <br/>
+                    <input type="text" class="fieldContacto" required> <br/> <br/> 
+
+                    <p>Apellido:</p>
+                    <input type="text" class="fieldContacto" required> <br/> <br/>
                 
                     <p>Correo electrónico:</p>
-                    <input type="text" class="fieldContacto" required> <br/>
+                    <input type="email" class="fieldContacto" required> <br/> <br/> 
                 
                     <p>Asunto:</p>
-                    <input type="text" class="fieldContacto" required> <br/>
+                    <input type="text" class="fieldContacto" required> <br/> <br/> 
                 
                     <p>Mensaje:</p>
-                    <textarea class="fieldContacto" required></textarea> <br/>
+                    <textarea class="fieldContacto" required></textarea> <br/> <br/> 
                 
                     <div class="buttonContacto">
                         <input type="submit" class="inputContacto" value="Enviar">
@@ -97,5 +94,7 @@
     <footer class="rightsReserved">
         Todos los derechos reservados © 2021
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

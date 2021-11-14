@@ -14,9 +14,9 @@
   }
   
   .opcionesSizeMenu {
-    font-size: 1.6em;
+    font-size: 3.5rem;
     color: #fff;
-    text-align: left;
+    text-align: center;
   }
   
   .baconCheese {
@@ -41,6 +41,9 @@
     width: 300px;
     height: 200px;
     right: 30px;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
   }
   
   .baconCheese figure img {
@@ -48,6 +51,7 @@
     height: 200px;
     -webkit-transition: all 500ms ease-out;
     transition: all 500ms ease-out;
+    
   }
   
   .baconCheese figure .descriptionBurguer {
@@ -61,6 +65,7 @@
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    font-size: 1.8rem;
   }
   
   .baconCheese figure:hover > .descriptionBurguer {
@@ -106,9 +111,120 @@
     /*                        */
   }
 
-  @media screen and (max-width: 600px){
-    .baconCheese figure img{
-      height: 11.8rem;
-      width: 23rem;
+  
+
+  @media (max-width: 420px){
+    
+    .baconCheese figure {
+      margin-left: 65px;
     }
+    
+    .baconCheese figure img{
+      height: 100%;
+      width: 100%;
+    }
+
+    .baconCheese {
+      font-family: 'Glory', sans-serif;
+      background-color: #3a3333;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr);
+          grid-template-columns: repeat(1, 1fr);
+  } 
+}
+
+@media (min-width: 421px) and (max-width: 540px) {
+
+      .baconCheese {
+        display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr);
+          grid-template-columns: repeat(1, 1fr);
+      }
+
+      .baconCheese figure {
+        margin-left: 125px;
+      }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+
+  .baconCheese {
+    display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr);
+      grid-template-columns: repeat(1, 1fr);
   }
+
+  .baconCheese figure {
+    margin-left: 235px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+
+  .baconCheese {
+    display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr);
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .baconCheese figure {
+    margin-left: 370px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+
+  .baconCheese figure {
+    width: 320px;
+    height: 215px;
+  }
+  
+  .baconCheese figure img {
+    width: 320px;
+    height: 215px;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1439px) {
+
+  .baconCheese figure {
+    position: relative;
+    right: 6px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+
+  .baconCheese figure {
+    width: 330px;
+    height: 220px;
+  }
+
+  .baconCheese figure img {
+    width: 330px;
+    height: 220px;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+}
+
+@media (min-width: 1920px) {
+
+  .baconCheese figure {
+    width: 420px;
+    height: 279.9px;
+  }
+
+  .baconCheese figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+}

@@ -33,6 +33,7 @@
   .nosotrosImagen figure:hover > .descriptionBurguer {
     opacity: 1;
     visibility: visible;
+    
   }
   
   .nosotrosImagen figure:hover > .descriptionBurguer h3 {
@@ -47,15 +48,16 @@
   
   .nosotrosImagen figure .descriptionBurguer h3 {
     color: #fff;
-    font-weight: 700;
     margin-bottom: 120px;
     -webkit-transition: all 500ms ease-out;
     transition: all 500ms ease-out;
+    
   }
   
   .nosotrosImagen figure .descriptionBurguer p {
     color: #fff;
-    font-weight: 300;
+
+    
   }
   
   .iframeMapa {
@@ -64,30 +66,156 @@
   }
   
 
-  @media screen and (max-width: 600px) {
+  @media (min-width: 360px) and (max-width: 767px) {
     
+    .nosotrosImagen figure .descriptionBurguer {
+      font-size: 1.6rem;
+    }
+    
+    .nosotrosImagen figure {
+      width: 360px ;
+      height: 300px ;
+      margin-bottom: 60px;
+      margin-left: 2.7rem ;
+    }
+
+    .nosotrosImagen figure img{
+      height: 100%;
+      width: 100%;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer p {
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+      margin-top: 50px ;
+      margin-bottom: 10px ;
+    }
+  }
+
+  @media (min-width: 768px) {
+    
+    .nosotrosImagen figure .descriptionBurguer {
+      font-size: 2rem;
+    }
+
+
     .nosotrosImagen figure{
-      right: 1.1rem;
-      width: 20rem;
-      height: 15rem;
+      position: relative;
+      width: 700px ;
+      height: 600px ;
+      margin-top: 15px ;
+      margin-bottom: 35px ;
+      margin-left: 35px;
     }
     
     .nosotrosImagen figure img{
       height: 100%;
-      width: 200%;
+      width: 100%;
     }
     
-    .nosotrosImagen figure:hover > .descriptionBurguer h3{
-      margin: auto;
-      font-size: auto;
-    }
-
-    .nosotrosImagen figure .descriptionBurguer p{
-      font-size: auto;
+    .nosotrosImagen figure:hover > .descriptionBurguer p {
+      margin-top: 2rem;
     }
 
     .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+      margin-top: 20rem;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (width: 1280px) {
+    
+    .nosotrosImagen figure .descriptionBurguer {
+      font-size: 2rem;
+    }
+
+    .nosotrosImagen figure{
+      width: 1030px ;
+      height: 550px;
+      margin-top: 15px;
+      margin-bottom: 35px;
+      margin-left: 11rem;
+    }
+
+    .nosotrosImagen figure img{
+      height: 100%;
+      width: 100%;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer p {
+      margin-top: 2rem;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+      margin-top: 20rem;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: 1281px) and (max-width: 1366px) {
+    
+    .nosotrosImagen figure{
+      width: 1130px ;
+      height: 600px;
+      margin-top: 15px;
+      margin-bottom: 35px;
+      margin-left: 9rem;
+    }
+
+    .nosotrosImagen figure img{
+      height: 100%;
+      width: 100%;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer p {
       margin-top: 4rem;
-      margin-bottom: 0.3rem;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+      margin-top: 25rem;
+      margin-bottom: 35px;
+    }
+  }
+
+  @media (min-width: 1439px) {
+    
+    .nosotrosImagen figure{
+      margin-left: 120px;
+      width: 1170px;
+      height: 630px;
+      margin-top: 15px;
+      margin-bottom: 35px;
+    }
+
+    .nosotrosImagen figure img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1900px) {
+    
+    .nosotrosImagen figure .descriptionBurguer {
+      font-size: 2.2rem;
+    }
+
+    .nosotrosImagen figure {
+      width: 1400px;
+      height: 700px;
+      margin-top: 15px;
+      margin-bottom: 35px;
+      margin-left: 240px;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer p {
+      margin-top: 4rem;
+    }
+
+    .nosotrosImagen figure:hover > .descriptionBurguer h3 {
+      margin-top: 25rem;
+      margin-bottom: 35px;
     }
   }

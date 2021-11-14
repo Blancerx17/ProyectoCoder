@@ -24,7 +24,7 @@ form{
 			background-color: #3a3333;
 			border-radius: 3px;
 			color: #999;
-			font-size: 0.85em;
+			font-size: 1.85rem;
 			padding: 20px;
 			margin: 0 auto;
 			display: flex;
@@ -47,14 +47,6 @@ form{
     .contactoImagen{
       position: absolute;
       width: 48%;
-    }
-
-    .imgContacto{
-      display: flex;
-      justify-content: right;
-      align-items: right;
-      position: relative;
-      top: 60px;
     }
 
 		.fieldContacto{
@@ -94,7 +86,12 @@ form{
     transition: all ease-in-out 600ms;
   }
 
-  @media screen and (max-width: 600px){
+  .divContacto {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px){
     input, textarea{
 			border: 0;
       border-radius: 5px;
@@ -106,5 +103,15 @@ form{
     }
     .contactoImagen{
       display: none;
+    }
+  }
+  
+  @media (width: 1366px) {
+    .imgContacto{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      position: relative;
+      top: 60px;
     }
   }
