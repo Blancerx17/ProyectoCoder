@@ -265,10 +265,10 @@ body {
 
 @media (max-width: 600px) {
   .carousel-inner {
-    height: 380px;
+    height: 390px;
     background-color: #3a3333; }
   .carouselImage {
-    height: 380px;
+    height: 390px;
     max-width: 103%; } }
 
 /* ----------------- INFORMATION ----------------- */
