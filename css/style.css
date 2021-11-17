@@ -265,10 +265,10 @@ body {
 
 @media (max-width: 600px) {
   .carousel-inner {
-    height: 390px;
+    height: 420px;
     background-color: #3a3333; }
   .carouselImage {
-    height: 390px;
+    height: 420px;
     max-width: 103%; } }
 
 /* ----------------- INFORMATION ----------------- */
@@ -881,8 +881,8 @@ a:active {
 
 @media (min-height: 2000px) and (max-height: 2500px) {
   .botonError {
-    margin-top: 750px;
+    margin-top: 950px;
     padding: 28px 48px; }
   .h1Error {
-    margin-top: 610px;
+    margin-top: 810px;
     font-size: 36px; } }
