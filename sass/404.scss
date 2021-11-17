@@ -62,6 +62,7 @@ a:active{
 }
 
 @media (min-width: 360px) and (max-width: 540px) {
+    
     .botonError {
         margin-top: 280px;
     }
@@ -73,6 +74,7 @@ a:active{
 }
 
 @media (min-height: 741px) and (max-height: 950px) {
+    
     .botonError {
         margin-top: 340px;
     }
@@ -84,6 +86,7 @@ a:active{
 }
 
 @media (min-height: 951px) and (max-height: 1024px) {
+    
     .botonError {
         margin-top: 380px;
     }
@@ -95,6 +98,7 @@ a:active{
 }
 
 @media (min-height: 1025px) and (max-height: 1080px) {
+    
     .botonError {
         margin-top: 380px;
         padding: 20px 40px;
@@ -107,6 +111,7 @@ a:active{
 }
 
 @media (min-height: 1081px) and (max-height: 1366px) {
+    
     .botonError {
         margin-top: 520px;
         padding: 28px 48px;
@@ -118,6 +123,20 @@ a:active{
 
     .h1Error {
         margin-top: 380px;
+        font-size: 36px;
+    }
+}
+
+
+@media (min-height: 2000px) and (max-height: 2500px) {
+    
+    .botonError {
+        margin-top: 600px;
+        padding: 28px 48px;
+    }
+
+    .h1Error {
+        margin-top: 460px;
         font-size: 36px;
     }
 }
