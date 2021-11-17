@@ -169,6 +169,14 @@ textarea {
   color: #fff;
   font-size: 1.8rem; }
 
+.ficoBar {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #fff; }
+
+.ficoBar:hover {
+  color: #FFD25A; }
+
 footer {
   background-color: #3a3333; }
 
@@ -254,6 +262,14 @@ body {
   .carouselImage {
     width: 100%;
     height: 71.7rem; } }
+
+@media (max-width: 600px) {
+  .carousel-inner {
+    height: 355px;
+    background-color: #3a3333; }
+  .carouselImage {
+    height: 355px;
+    max-width: 103%; } }
 
 /* ----------------- INFORMATION ----------------- */
 .informacionAdicional {
@@ -778,7 +794,6 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: center;
   justify-content: center; }
 
@@ -824,3 +839,42 @@ a:active {
   text-decoration: none;
   border: none;
   right: 420px; }
+
+@media (min-width: 360px) and (max-width: 540px) {
+  .botonError {
+    margin-top: 280px; }
+  .h1Error {
+    margin-top: 170px;
+    font-size: 22px; } }
+
+@media (min-height: 741px) and (max-height: 950px) {
+  .botonError {
+    margin-top: 340px; }
+  .h1Error {
+    margin-top: 240px;
+    font-size: 30px; } }
+
+@media (min-height: 951px) and (max-height: 1024px) {
+  .botonError {
+    margin-top: 380px; }
+  .h1Error {
+    margin-top: 280px;
+    font-size: 28px; } }
+
+@media (min-height: 1025px) and (max-height: 1080px) {
+  .botonError {
+    margin-top: 380px;
+    padding: 20px 40px; }
+  .h1Error {
+    margin-top: 280px;
+    font-size: 36px; } }
+
+@media (min-height: 1081px) and (max-height: 1366px) {
+  .botonError {
+    margin-top: 520px;
+    padding: 28px 48px; }
+  button {
+    font-size: 20px; }
+  .h1Error {
+    margin-top: 380px;
+    font-size: 36px; } }

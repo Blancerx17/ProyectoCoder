@@ -74,3 +74,19 @@
       height: 71.7rem ;
     }
   }
+
+  @media (max-width: 600px) {
+    
+    .carousel-inner {
+      height: 355px;
+      
+      background-color: #3a3333;
+    }
+
+   
+    
+    .carouselImage {
+      height: 355px;
+      max-width: 103%;
+    }
+  }
